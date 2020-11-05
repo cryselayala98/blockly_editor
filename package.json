@@ -1,18 +1,18 @@
 {
-  "name": "ejemplo-blockly",
-  "version": "1.0.0",
-  "description": "aprendiendo a como usar blockly",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "ejemplo-blockly"
-  },
-  "author": "crisel ayala",
-  "license": "ISC",
-  "dependencies": {
-    "blockly": "^3.20200924.3"
-  }
+    "name": "blockly_editor",
+    "version": "1.0.0",
+    "description": "Blockly with custom blocks for competitive programming",
+    "main": "js/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "blockly_editor"
+    },
+    "author": "crisel ayala",
+    "license": "ISC",
+    "dependencies": {
+        "blockly": "^3.20200924.3"
+    }
 }
