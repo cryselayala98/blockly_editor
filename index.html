@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplo blockly</title>
+</head>
+
+<body>
+
+    <h1>Probando blockly</h1>
+
+    <div id="blocklyDiv" style="height: 480px; width: 600px;">
+
+        <xml id="toolbox" style="display: none">
+            <!--block type="controls_if"></block>
+            <block type="controls_repeat_ext"></block>
+            <block type="logic_compare"></block>
+            <block type="math_number"></block>
+            <block type="math_arithmetic"></block>
+            <block type="text"></block>
+            <block type="text_print"></block-->
+
+            <!--Definiendo categorías de agrupamiento de bloques-->
+            <category name="Control" toolboxitemid="categoryId">
+                <block type="controls_if"></block>
+                <block type="controls_repeat_ext"></block>
+                <block type="logic_compare"></block>
+                <block type="math_number"></block>
+                <block type="math_arithmetic"></block>
+                <block type="text"></block>
+                <block type="text_print"></block>
+                <block type="controls_if"></block>
+                <block type="controls_whileUntil"></block>
+                <block type="controls_for">
+            </category>
+            <category name="Logic">
+                <block type="logic_compare"></block>
+                <block type="logic_operation"></block>
+                <block type="logic_boolean" disabled="true"></block>
+
+            </category>
+            <category name="Logic" colour="210">...</category>
+            <category name="Loops" colour="120">...</category>
+            <category name="Math" colour="230">...</category>
+            <category name="Colour" colour="20">...</category>
+
+            <!--el custom, ya proporciona un grupo de bloques por defecto, para la categoría creada-->
+            <category name="Variables" colour="330" custom="VARIABLE"></category>
+            <category name="Functions" colour="290" custom="PROCEDURE"></category>
+
+            <!--el category style agrega estilos,como colores, por defecto-->
+            <category name="Logic" categorystyle="logic_category" hidden="true">
+            </category>
+
+            <!--creando una categoría con un custom personalizado, se llamará COLOUR_PALETTE-->
+            <category name="Colours" custom="COLOUR_PALETTE"></category>
+
+
+
+
+        </xml>
+
+    </div>
+
+    <textarea name="view_code" id="textarea" cols="150" rows="70"></textarea>
+
+    <!--agregando estilos a una categoría bloqueada-->
+    <style>
+        .blocklyToolboxCategory[disabled="true"] {
+            opacity: .5;
+        }
+    </style>
+
+
+
+    <script src="node_modules/blockly/blockly_compressed.js"></script>
+    <script src="node_modules/blockly/blocks_compressed.js"></script>
+    <script src="node_modules/blockly/msg/es.js"></script>
+
+    <!--blockly python generator-->
+    <script src="node_modules/blockly/python_compressed.js"></script>
+
+
+    <script src="index.js"></script>
+
+</html>
